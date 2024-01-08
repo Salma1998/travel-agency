@@ -6,17 +6,29 @@ import { AppComponent } from './app.component';
 import { PrimaryComponent } from './primary/primary.component';
 import { HomeComponent } from './Pages/home/home.component';
 import { ProductsComponent } from './Pages/products/products.component';
+import { TabCardsComponent } from './Pages/tab-cards/tab-cards.component';
+import { MatButtonModule } from '@angular/material/button';
+import {MatTabsModule} from '@angular/material/tabs';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
+import { InfoComponent } from './Pages/info/info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrimaryComponent,
     HomeComponent,
-    ProductsComponent
+    ProductsComponent,
+    TabCardsComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule,
+    MatTabsModule,
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
