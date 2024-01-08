@@ -1,0 +1,182 @@
+
+
+    <header>
+      <a style="text-shadow: 0 0 3px #d7d7d7;
+      font-size: 22px;
+  " href="" class="logo">Wander<span style="color: rgb(52, 100, 204);text-shadow: 0 0 3px #92949f;">lust</span></a>
+        <nav>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Gallery</a>
+            <a href="">Contacts</a>
+        </nav>
+    </header>
+
+    <!-- carousel -->
+    <div class="carousel">
+        <!-- list item -->
+        <div class="list">
+          <ng-container *ngFor="let e of [].constructor(12); let i = index"> 
+              <div class="item">
+                  <img src="assets/image/img{{i+1}}.jpg">
+                  <div class="content">
+                      <!-- <div class="author">Wanderlust</div> -->
+                      <div class="title">VACATION TRIP</div>
+                      <div class="topic">EGYPT</div>
+                      <div class="des">
+                        Traveling broadens horizons, fostering cultural understanding and empathy. It offers personal growth through new experiences and challenges. Exploration of diverse landscapes and cultures provides inspiration and rejuvenation. Traveling broadens horizons, fostering cultural understanding and empathy. It offers personal growth through new experiences and challenges.
+                      </div>
+                      <div class="buttons">
+                          <button>Book Now!</button>
+                          <button>See More</button>
+                      </div>
+                  </div>
+              </div>
+            </ng-container>
+           
+        </div>
+        <!-- list thumnail -->
+        <div class="thumbnail">
+          <ng-container *ngFor="let e of [].constructor(12); let i = index"> 
+              <div class="item">
+                <img *ngIf="i!==0" src="assets/image/img{{i}}.jpg">
+                <img *ngIf="i==0" src="assets/image/img{{12}}.jpg">
+                  <div class="content">
+                      <div class="title" style="font-size: 20px;">
+                          Cairo
+                      </div>
+                      <div class="description" style="font-size: 12px;display: inline-flex;align-items: center;">
+                          <img style="width: 10px; margin-right: 4px;" src="assets/image/location.png">Egypt
+
+                      </div>
+                  </div>
+              </div>
+            </ng-container>
+            
+        </div>
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <!-- <div class="time"></div> -->
+    </div>
+
+
+    <section class="logo_section">
+        <div class="logo_container">
+            <div>
+                <img src="assets/image/logo2.png">
+            </div>
+            <div>
+                <img src="assets/image/logo5.png">
+            </div>
+            <div>
+                <img src="assets/image/logo3.png">
+            </div>
+            <div>
+                <img src="assets/image/logo4.png">
+            </div>
+            <div>
+                <img src="assets/image/logo1.png">
+            </div>
+        </div>
+    </section>
+    <div class="module">
+    <section style="width: 80%;margin: 1rem auto;">
+      <div style="display: inline-flex;align-items: center;width: 100%;">
+        <h2 style="margin: 3rem auto 2rem 0;font-weight: bold;">Popular Destinations</h2>
+         <!-- Tabs - Page -->
+         <div class="tabs-page">
+          <!-- Nav Tabs -->
+          <ul class="nav nav-tabs" role="tablist" style="border: none;font-size: 14px;">
+              <li style="margin-left: 4rem;border-bottom: 2px solid #fd003a;" role="presentation" class="active"><a style="color: #1f1f1f;" href="#all" aria-controls="all" role="tab" data-toggle="tab">All</a></li>
+              <li style="margin-left: 4rem;" role="presentation"><a style="color: #1f1f1f;" href="#Beach" aria-controls="Beach" role="tab" data-toggle="tab">Beach</a></li>
+              <li style="margin-left: 4rem;" role="presentation"><a style="color: #1f1f1f;" href="#Forest" aria-controls="Forest" role="tab" data-toggle="tab">Forest</a></li>
+              <li style="margin-left: 4rem;" role="presentation"><a style="color: #1f1f1f;" href="#Mountain" aria-controls="Mountain" role="tab" data-toggle="tab">Mountain</a></li>
+              <li style="margin-left: 4rem;" role="presentation"><a style="color: #1f1f1f;" href="#Snow" aria-controls="Snow" role="tab" data-toggle="tab">Snow</a></li>
+          </ul><!-- ./ nav tabs -->	
+      </div><!-- ./ tabs page -->
+    </div>
+  
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+              <div class="card h-100" style="border: none;box-shadow: 3px 3px 10px #4c4c4c85;">
+                <div class="img_container">
+                    <img src="assets/image/img1.jpg" class="card-img-top"
+                  alt="img" />
+                </div>
+                <div class="card-body">
+                    <div style="display: inline-flex;width: 100%;align-items: center;">
+                        <h5 class="card-title text-dark font-weight-bold" style="margin-right: auto;margin-bottom: 0;">Cairo Pyramid</h5> 
+                        <img style="width: 16px;height: 16px; margin-right: 6px;" src="assets/image/star.png">
+                        <span style="color: rgb(255 203 43)">4.9</span>
+                    </div>
+                  <div class="description text-secondary" style="margin-top:6px;font-size: 14px;display: inline-flex;align-items: center;">
+                    <img style="width: 12px; margin-right: 4px;" src="assets/image/location.png">Egypt
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card h-100" style="border: none;box-shadow: 3px 3px 10px #4c4c4c85;">
+                  <div class="img_container">
+                      <img src="assets/image/img12.jpg" class="card-img-top"
+                    alt="img" />
+                  </div>
+                  <div class="card-body">
+                      <div style="display: inline-flex;width: 100%;align-items: center;">
+                          <h5 class="card-title text-dark font-weight-bold" style="margin-right: auto;margin-bottom: 0;">Marly Beach</h5> 
+                          <img style="width: 16px;height: 16px; margin-right: 6px;" src="assets/image/star.png">
+                          <span style="color: rgb(255 203 43)">4.9</span>
+                      </div>
+                    <div class="description text-secondary" style="margin-top:6px;font-size: 14px;display: inline-flex;align-items: center;">
+                      <img style="width: 12px; margin-right: 4px;" src="assets/image/location.png">India
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100" style="border: none;box-shadow: 3px 3px 10px #4c4c4c85;">
+                  <div class="img_container">
+                      <img src="assets/image/img10.jpg" class="card-img-top"
+                    alt="img" />
+                  </div>
+                  <div class="card-body">
+                      <div style="display: inline-flex;width: 100%;align-items: center;">
+                          <h5 class="card-title text-dark font-weight-bold" style="margin-right: auto;margin-bottom: 0;">Camps Bay</h5> 
+                          <img style="width: 16px;height: 16px; margin-right: 6px;" src="assets/image/star.png">
+                          <span style="color: rgb(255 203 43)">4.9</span>
+                      </div>
+                    <div class="description text-secondary" style="margin-top:6px;font-size: 14px;display: inline-flex;align-items: center;">
+                      <img style="width: 12px; margin-right: 4px;" src="assets/image/location.png">Hawaii
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100" style="border: none;box-shadow: 3px 3px 10px #4c4c4c85;">
+                  <div class="img_container">
+                      <img src="assets/image/img6.jpg" class="card-img-top"
+                    alt="img" />
+                  </div>
+                  <div class="card-body">
+                      <div style="display: inline-flex;width: 100%;align-items: center;">
+                          <h5 class="card-title text-dark font-weight-bold" style="margin-right: auto;margin-bottom: 0;">Snowblood</h5> 
+                          <img style="width: 16px;height: 16px; margin-right: 6px;" src="assets/image/star.png">
+                          <span style="color: rgb(255 203 43)">4.9</span>
+                      </div>
+                    <div class="description text-secondary" style="margin-top:6px;font-size: 14px;display: inline-flex;align-items: center;">
+                      <img style="width: 12px; margin-right: 4px;" src="assets/image/location.png">Argentina
+                  </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </section>
+  </div>
+
+
+    
